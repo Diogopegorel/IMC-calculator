@@ -37,7 +37,7 @@ input, button {
     width: calc(100% - 40px); /* Ajusta para padding */
     margin: 2rem auto; /* Ajusta para padding */
     padding: 10px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     border: 1px solid #3d3c3c;
     border-radius: 0.5rem;
 }
@@ -59,7 +59,7 @@ button:hover {
 #resultado {
     width: calc(100% - 40px);
     line-height: 3;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 20px;
     margin: 10px auto;
     border: 1px solid #ccc;
@@ -92,7 +92,7 @@ img {
     width: 60px;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .main, #resultado {
         width: calc(100% - 20px);
     }
@@ -103,7 +103,6 @@ img {
     }
 
     h1 {
-        color: green;
         font-size: 2.5rem; /* Tamanho menor para telas pequenas */
     }
 }
