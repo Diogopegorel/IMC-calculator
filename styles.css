@@ -18,7 +18,7 @@ body {
 
 .main {
     margin-top: 7%;  
-    width: 80%; 
+    width: 70%; 
     text-align: center;
     flex: 1; /* O .main vai ocupar todo o espaço disponível */
 }
@@ -33,8 +33,8 @@ p {
     margin: 3rem auto;
 }
 
-input, button {
-    width: calc(100% - 40px); /* Ajusta para padding */
+input {
+    width: 40%; /* Ajusta para padding */
     margin: 2rem auto; /* Ajusta para padding */
     padding: 10px;
     font-size: 1.5rem;
@@ -43,10 +43,14 @@ input, button {
 }
 
 button {
+    width: 80%;
     background-color: rgb(169, 26, 169);
     color: #fff;
+    font-size: 1.5rem;
+    padding: 10px;
     font-weight: bold;
     border: none;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: all ease .3s;
 }
@@ -57,11 +61,11 @@ button:hover {
 }
 
 #resultado {
-    width: calc(100% - 40px);
+    width: 80%;
     line-height: 3;
     font-size: 1.5rem;
     padding: 20px;
-    margin: 10px auto;
+    margin: 2rem auto;
     border: 1px solid #ccc;
     font-size: 2rem;
     border-radius: 0.5rem;
@@ -93,12 +97,12 @@ img {
 }
 
 @media (max-width: 600px) {
-    .main, #resultado {
-        width: calc(100% - 20px);
+    .main{     
+        max-width: 80%;
     }
 
     input, button {
-        width: calc(100% - 20px); /* Menor padding para telas pequenas */
+        width: 80%; /* Menor padding para telas pequenas */
         margin: 10px 10px;
     }
 
