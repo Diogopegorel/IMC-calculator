@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100%;
+    margin: 0;
+    padding: 5%;
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 80%; 
+    text-align: center; /* Centraliza o texto e outros elementos */
+}
+
+h1 {
+    color: rgb(169, 26, 169);
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all ease .3s;
+    border: 1px solid #3d3c3c;
+    border-radius: 1rem;
+}
+
+button {
+    background-color: rgb(169, 26, 169);
+    color: #f4f4f4;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: #ccc;
+    transform: scale(1.2);
+}
+
+#resultado {
+    line-height: 3;
+    margin: 10% auto;
+    max-width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    border-radius: 1rem;
+}
+
+.verde {
+    color: white;
+    background-color: green;
+}
+
+.amarelo {
+    color: white;
+    background-color: yellow;
+    color: black;
+}
+
+.vermelho {
+    color: white;
+    background-color: red;
+}
+
+.laranja {
+    color: white;
+    background-color: orange;
+}
+
+footer {
+    width: 100%;
+    background-color: #f2f2f2; /* Escolha a cor de fundo desejada */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 5%;
+}
+
+.p_footer {
+    color: #a5a5a8;
+    margin-bottom: 5px;
+}
+
+
+.footer-content p {
+    margin: 10px;
+    padding: 0;
+}
+
+.footer-logo {
+    width: 60px; 
+    border-radius: 1rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    /* Coloca os inputs e o botão um abaixo do outro */
+    input {
+        display: block;
+        width: calc(100% - 20px); /* Corrigido para usar a função calc() */
+        margin: 10px auto;
+    }
+    button {
+        display: block;
+        width: calc(100% - 20px); /* Subtrai a margem total */
+        margin: 10px auto; /* Centraliza horizontalmente e adiciona margem superior e inferior */
+    }
+    
+    .main {
+        width: 100%; /* Ajusta a largura da div principal */
+        padding: 0 10px; /* Ajustado para preenchimento horizontal */
+    }
+
+}
+
+

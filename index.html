@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora de IMC</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">   
+        <h1>Calculadora de IMC</h1>
+        <p>Insira seu peso em kg e altura em metros:</p>
+        <form id="imcForm">
+            <input type="number" id="peso" placeholder="Peso em kg" step="0.01" required>
+            <input type="number" id="altura" placeholder="Altura em metros" step="0.01" required>
+            <button type="submit">Calcular IMC</button>
+        </form>
+        <div id="resultado"></div>
+        
+    </div>
+    <footer>
+        <div class="footer-content">
+            <img src="cartoon.webp" alt="Diogo Pegorel Logo" class="footer-logo">
+            <p class="p_footer">Diogo Pegorel</p>
+        </div>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
