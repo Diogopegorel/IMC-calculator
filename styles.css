@@ -17,6 +17,7 @@ body {
 }
 
 .main {
+    margin-top: 7%;  
     width: 80%; 
     text-align: center;
     flex: 1; /* O .main vai ocupar todo o espaço disponível */
@@ -27,24 +28,27 @@ h1 {
     font-size: 2.5rem;
 }
 
+p {
+    font-size: 1.5rem;
+    margin: 3rem auto;
+}
+
 input, button {
     width: calc(100% - 40px); /* Ajusta para padding */
-    margin: 10px 20px; /* Ajusta para padding */
+    margin: 2rem auto; /* Ajusta para padding */
     padding: 10px;
-    font-size: 1rem;
+    font-size: 2.5rem;
     border: 1px solid #3d3c3c;
     border-radius: 0.5rem;
 }
 
 button {
-    width: 90%;
     background-color: rgb(169, 26, 169);
     color: #fff;
     font-weight: bold;
     border: none;
     cursor: pointer;
     transition: all ease .3s;
-    margin: 10px auto;
 }
 
 button:hover {
@@ -53,7 +57,9 @@ button:hover {
 }
 
 #resultado {
-    width: 90%;
+    width: calc(100% - 40px);
+    line-height: 3;
+    font-size: 2rem;
     padding: 20px;
     margin: 10px auto;
     border: 1px solid #ccc;
@@ -86,9 +92,9 @@ img {
     width: 60px;
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .main, #resultado {
-        width: 90%;
+        width: calc(100% - 20px);
     }
 
     input, button {
@@ -97,6 +103,7 @@ img {
     }
 
     h1 {
-        font-size: 2rem; /* Tamanho menor para telas pequenas */
+        color: green;
+        font-size: 2.5rem; /* Tamanho menor para telas pequenas */
     }
 }
