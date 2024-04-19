@@ -1,110 +1,102 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em uma coluna */
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    height: 100%;
-    margin: 0;
-    padding: 5%;
-    display: flex;
-    align-items: center; /* Alinha verticalmente */
-    justify-content: center; /* Alinha horizontalmente */
-    justify-content: center;
     align-items: center;
+    min-height: 100vh; /* O mínimo de altura é o tamanho da janela de visualização */
+    justify-content: flex-start; /* Alinha o conteúdo no início do container */
+    padding-top: 40px; /* Espaço para não colar o conteúdo no topo */
+    padding-bottom: 60px; /* Espaço para não colar o conteúdo no footer */
 }
 
 .main {
     width: 80%; 
-    text-align: center; /* Centraliza o texto e outros elementos */
-    margin-bottom: 20px;
+    text-align: center;
+    flex: 1; /* O .main vai ocupar todo o espaço disponível */
 }
 
 h1 {
     color: rgb(169, 26, 169);
-    font-size: 3rem;
-}
-
-.dados {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 input, button {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
+    width: calc(100% - 40px); /* Ajusta para padding */
+    margin: 10px 20px; /* Ajusta para padding */
     padding: 10px;
-    font-size: 16px;
-    transition: all ease .3s;
+    font-size: 1rem;
     border: 1px solid #3d3c3c;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 button {
+    width: 90%;
     background-color: rgb(169, 26, 169);
-    color: #f4f4f4;
+    color: #fff;
     font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all ease .3s;
+    margin: 10px auto;
 }
 
 button:hover {
-    cursor: pointer;
-    box-shadow: #ccc;
-    transform: scale(1.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: scale(1.1);
 }
 
 #resultado {
-    line-height: 3;
-    margin: 10% auto;
-    max-width: 50%;
+    width: 90%;
     padding: 20px;
+    margin: 10px auto;
     border: 1px solid #ccc;
-    font-size: 18px;
-    border-radius: 1rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    background: #fff; /* Fundo branco para garantir visibilidade */
 }
 
-.verde {
+/* Estilos para etiquetas */
+.verde, .amarelo, .vermelho, .laranja {
     color: white;
-    background-color: green;
+    padding: 10px;
+    border-radius: 0.5rem;
+    margin-top: 10px; /* Espaço acima da etiqueta */
 }
 
-.amarelo {
-    color: white;
-    background-color: yellow;
-    color: black;
-}
-
-.vermelho {
-    color: white;
-    background-color: red;
-}
-
-.laranja {
-    color: white;
-    background-color: orange;
-}
+.verde { background-color: green; }
+.amarelo { background-color: yellow; color: black; } /* Texto preto para melhor visibilidade */
+.vermelho { background-color: red; }
+.laranja { background-color: orange; }
 
 footer {
     width: 100%;
-    background-color: #f2f2f2; /* Escolha a cor de fundo desejada */
+    background-color: #f2f2f2;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
-    position: fixed;
-    bottom: 3%;
 }
 
-.p_footer {
-    color: #a5a5a8;
-    margin-bottom: 5px;
+img {
+    width: 60px;
 }
 
+@media (max-width: 600px) {
+    .main, #resultado {
+        width: 90%;
+    }
 
-.footer-content p {
-    margin: 10px;
-    padding: 0;
-}
+    input, button {
+        width: calc(100% - 20px); /* Menor padding para telas pequenas */
+        margin: 10px 10px;
+    }
 
-.footer-logo {
-    width: 60px; 
-    border-radius: 1rem;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    h1 {
+        font-size: 2rem; /* Tamanho menor para telas pequenas */
+    }
 }
